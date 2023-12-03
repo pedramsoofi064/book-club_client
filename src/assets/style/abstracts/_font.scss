@@ -1,0 +1,52 @@
+$ff-primary: dana;
+$font-url: "@/assets/fonts";
+
+// $font-faces: (
+//   $ff-primary: (
+//     regular: (
+//       font-style: normal,
+//       font-weight: 400,
+//       src: url("#{$font-url}/dana/dana-fanum-regular.woff2") format("woff2"),
+//     ),
+//     medium: (
+//       font-style: normal,
+//       font-weight: 500,
+//       src: url("#{$font-url}/dana/dana-fanum-medium.woff2") format("woff2"),
+//     ),
+//     semiBold: (
+//       font-style: normal,
+//       font-weight: 600,
+//       src: url("#{$font-url}/dana/dana-fanum-demibold.woff2") format("woff2"),
+//     ),
+//     bold: (
+//       font-style: normal,
+//       font-weight: 700,
+//       src: url("#{$font-url}/dana/dana-fanum-bold.woff2") format("woff2"),
+//     ),
+//   ),
+// );
+
+$font-faces: (
+  $ff-primary: (
+    regular: (
+      font-style: normal,
+      font-weight: 400,
+      src: url("#{$font-url}/iransans/woff2/IRANSansWeb(FaNum).woff2") format("woff2"),
+    ),
+    medium: (
+      font-style: normal,
+      font-weight: 500,
+      src: url("#{$font-url}/iransans/woff2/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"),
+    ),
+    semiBold: (
+      font-style: normal,
+      font-weight: 600,
+      src: url("#{$font-url}/iransans/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+    ),
+    bold: (
+      font-style: normal,
+      font-weight: 700,
+      src: url("#{$font-url}/iransans/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+    ),
+  ),
+);

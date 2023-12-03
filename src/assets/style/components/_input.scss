@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+@use "../tools" as *;
+
+.input {
+  border-radius: radius(3);
+  border: 1px solid var(--color-palette-neutral-500, #ececee);
+  background: var(--surface-lightblue, #ffffff);
+  transition: border-color 0.3s;
+  height: 4rem;
+  @include typography(semi-bold-14);
+}

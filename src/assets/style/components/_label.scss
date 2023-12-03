@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+@use "../tools" as *;
+
+.label {
+  display: block;
+  text-align: start;
+  //TODO: this color should be added to design system
+  color: var(--text-gray-default, #3c4351);
+  @include typography(regular-14);
+  transition: $transition-3 ease-in-out;
+  padding: 0 space(4);
+  min-height: 2rem;
+}

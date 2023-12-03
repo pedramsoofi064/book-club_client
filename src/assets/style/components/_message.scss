@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+@use "../tools" as *;
+
+.message {
+  @include typography(regular-12);
+  @include flex(row, nowrap);
+  gap: space(2);
+  text-align: start;
+  min-height: 2rem;
+  color: var(--color-text-gray-default);
+  &--has-error {
+    color: var(--color-palette-error-500);
+  }
+}

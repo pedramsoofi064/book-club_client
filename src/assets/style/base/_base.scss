@@ -1,0 +1,57 @@
+@use "../abstracts" as *;
+@use "../tools" as *;
+
+#app {
+  @include typography(regular-14);
+  height: 100%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: right;
+  color: #3c4351;
+  background-color: var(--color-background-dark);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: $ff-primary;
+  overflow: hidden;
+}
+
+//placeholder
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: var(--black-black-100, #c3c5c9);
+  @include typography(regular-12);
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: var(--black-black-100, #c3c5c9);
+  opacity: 1;
+  @include typography(regular-12);
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: var(--black-black-100, #c3c5c9);
+  opacity: 1;
+  @include typography(regular-12);
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--black-black-100, #c3c5c9);
+  @include typography(regular-12);
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--black-black-100, #c3c5c9);
+  @include typography(regular-12);
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: var(--black-black-100, #c3c5c9);
+  @include typography(regular-12);
+}

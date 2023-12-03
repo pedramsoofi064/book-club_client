@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+@mixin elevation($type, $level) {
+  @if $type == light {
+    @include light-elevation($level, $base: #000);
+  } @else if $type == dark {
+    @include dark-elevation($level, $base: #fff);
+  }
+}

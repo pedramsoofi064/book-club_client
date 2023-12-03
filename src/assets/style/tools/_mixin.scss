@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+@mixin mq($key) {
+  $size: map-get($breakpoints, $key);
+
+  @if $size {
+    @media only screen and (max-width: $size) {
+      @content;
+    }
+  }
+}
+
+@mixin flex($dir: row, $wrap: nowrap, $align: flex-start, $justify: flex-start) {
+  display: flex;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin hide-scrollbar {
+  -ms-overflow-style: none !important ;
+  scrollbar-width: none !important ;
+  &::-webkit-scrollbar {
+    display: none !important ;
+  }
+}

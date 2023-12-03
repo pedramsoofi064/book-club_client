@@ -1,0 +1,49 @@
+@use "../tools/" as *;
+
+$color-list: primary, secondary, success, warning, error, neutral;
+$max-round-amount: 10;
+$size-list: (
+  xSmall: 3.6rem,
+  small: 4.2rem,
+  medium: 4.8rem,
+  large: 5.4rem,
+  xLarge: 6rem,
+);
+.button {
+  --btn-padding: 1.2rem;
+  --btn-content-gap: 1.2rem;
+
+  @for $round-amount from 0 through $max-round-amount {
+    &--round-#{$round-amount} {
+      --btn-border-radius: #{radius($round-amount)};
+    }
+  }
+  @each $size, $amount in $size-list {
+    &--#{$size} {
+      --btn-height: #{$amount};
+    }
+  }
+  @each $color in $color-list {
+    &--filled-#{$color} {
+      --btn-bg-color: var(--color-palette-#{$color}-500);
+      --btn-bg-active-color: var(--color-palette-#{$color}-700);
+      --btn-text-color: var(--color-palette-#{$color}-50);
+      --btn-text-active-color: var(--color-palette-#{$color}-100);
+    }
+  }
+  &--filled-primary {
+    --btn-text-color: #fff;
+    --btn-text-active-color: #fff;
+  }
+  @each $color in $color-list {
+    &--text-#{$color} {
+      --btn-text-color: var(--color-palette-#{$color}-500);
+    }
+  }
+  @each $color in $color-list {
+    &--outline-#{$color} {
+      --btn-text-color: var(--color-palette-#{$color}-500);
+      --btn-text-active-color: var(--color-palette-#{$color}-700);
+    }
+  }
+}

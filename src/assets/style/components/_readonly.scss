@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+@use "../tools" as *;
+
+.readonly {
+  opacity: 0.5;
+  &,
+  * {
+    cursor: not-allowed;
+    user-select: none;
+  }
+}

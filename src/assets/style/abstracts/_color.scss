@@ -1,0 +1,70 @@
+$main-palette: (
+  light: (
+    primary: #323324,
+    "white": #ffffff,
+    linenMist: #d8c5b7,
+    lightBeige: #FCF1ED,
+    darkBeige: #ECE1DD,
+  ),
+);
+
+$palette: (
+  light: (
+    primary: (
+      500: #323324,
+    ),
+    blush: (
+      500: #C49F8D,
+      600: #B28874,
+    ),
+    "green": (
+
+      500: #ABAC9C,
+      600: #8B8C7B,
+
+    ),
+    error: (
+      50: #fff1ed,
+      100: #ffd5c7,
+      200: #ffc0ac,
+      300: #ffa386,
+      400: #ff916e,
+      500: #ff764a,
+      600: #e86b43,
+      700: #b55435,
+      800: #8c4129,
+      900: #6b321f,
+    ),
+    warning: (
+      50: #fff9e6,
+      100: #ffecb2,
+      200: #ffe28d,
+      300: #ffd559,
+      400: #ffcd39,
+      500: #ffc107,
+      600: #e8b006,
+      700: #b58905,
+      800: #8c6a04,
+      900: #6b5103,
+    ),
+  ),
+
+);
+
+$text: (
+  light: (
+    light: #FFFFFF,
+    dark1: #222623,
+    dark2:#4D4D4D
+  ),
+
+);
+
+$background: (
+  light: (
+    main: #FAF9F3,
+    dark: #DCD2C9,
+    secondary: #f9fafb,
+  ),
+  
+);

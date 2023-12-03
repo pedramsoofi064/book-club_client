@@ -1,0 +1,39 @@
+@mixin light-elevation($level, $base: #000) {
+  $base1: rgba($base, 0.2);
+  $base2: rgba($base, 0.14);
+  $base3: rgba($base, 0.12);
+
+  $box-shadow1: 0px 2px 1px -1px $base1, 0px 1px 1px 0px $base2, 0px 1px 3px 0px $base3;
+  $box-shadow2: 0px 3px 1px -2px $base1, 0px 2px 2px 0px $base2, 0px 1px 5px 0px $base3;
+  $box-shadow3: 0px 3px 3px -2px $base1, 0px 3px 4px 0px $base2, 0px 1px 8px 0px $base3;
+
+  $light: (
+    0: none,
+    1: $box-shadow1,
+    2: $box-shadow2,
+    3: $box-shadow3,
+  );
+
+  box-shadow: map-get($light, $level);
+}
+
+@mixin dark-elevation($level, $base: #fff) {
+  $dark: (
+    0: none,
+    1: rgba($base, 0.05),
+    2: rgba($base, 0.07),
+    3: rgba($base, 0.08),
+  );
+
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: map-get($dark, $level);
+    pointer-events: none;
+  }
+}

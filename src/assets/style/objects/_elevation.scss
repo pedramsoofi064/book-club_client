@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+@for $i from 0 through 24 {
+  :root[theme="light"] {
+    .elevation-#{$i} {
+      @include light-elevation($i, $base: #000);
+    }
+  }
+  :root[theme="dark"] {
+    .elevation-#{$i} {
+      @include dark-elevation($i, $base: #000);
+    }
+  }
+}

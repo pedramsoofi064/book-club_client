@@ -1,0 +1,13 @@
+$breakpoints-list: x-large, large, medium, small, x-small, default;
+$typo-breakpoints-list: x-large, small , default;
+
+//TODO: CHANGE THIS BREAKPOINT LATER
+$breakpoints: (
+  x-small: 576px,
+  small: 768px,
+  medium: 992px,
+  large: 1200px,
+  x-large: 1400px,
+  //TODO: fix this later
+  default: 100000000px,
+);

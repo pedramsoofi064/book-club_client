@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.spinner-loading {
+  align-self: center;
+  font-size: 5px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 25px;
+  height: 25px;
+  border-radius: $circle;
+  border-top: 0.9em solid rgba(100,100,100,.1);
+  border-right: 0.9em solid rgba(100,100,100,.1);
+  border-bottom: 0.9em solid rgba(100,100,100,.1);
+  border-left: 0.9em solid rgba(60,60,60,.45);
+  transform: translateZ(0) scale(var(--vs-controls--spinner-size, var(--vs-controls-size)));
+  -webkit-animation: vSelectSpinner 1.1s infinite linear;
+  animation: vSelectSpinner 1.1s infinite linear;
+  transition: opacity .1s;
+}
