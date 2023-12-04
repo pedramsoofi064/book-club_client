@@ -1,5 +1,5 @@
 <template>
-   <div></div>
+   <div>init register</div>
 </template>
 
 <script>

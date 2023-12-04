@@ -13,7 +13,7 @@ export default {
 
   GROUP_NAME: "GroupSingle",
   GROUP_COMPONENT: import('@/views/group/id/id.view.vue'),
-  GROUP_PATH: "group/:id",
+  GROUP_PATH: "/group/:id",
   GROUP_META: {
     layout: "main-inner"
   },
