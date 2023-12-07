@@ -81,6 +81,7 @@ export default {
   height: 72px;
   left: 0;
   right: 0;
+  z-index: $header;
 
   &__main {
     margin-top: 12px;
@@ -124,5 +125,6 @@ export default {
   &__action {
     gap: 10px;
   }
+  
 }
 </style>

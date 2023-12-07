@@ -1,12 +1,10 @@
 <template>
   <div class="home">
-    <h1>home</h1>
+    <home-hero />
   </div>
 </template>
 
-<script>
-export default {};
-</script>
+<script></script>
 
 <style lang="scss" scoped>
 .home {
