@@ -1,4 +1,4 @@
-$ff-primary: dana;
+$ff-primary: peyda;
 $font-url: "@/assets/fonts";
 
 // $font-faces: (
@@ -6,12 +6,12 @@ $font-url: "@/assets/fonts";
 //     regular: (
 //       font-style: normal,
 //       font-weight: 400,
-//       src: url("#{$font-url}/dana/dana-fanum-regular.woff2") format("woff2"),
+//       src: url("#{$font-url}/dana/dana-fanum-regular.woff") format("woff"),
 //     ),
 //     medium: (
 //       font-style: normal,
 //       font-weight: 500,
-//       src: url("#{$font-url}/dana/dana-fanum-medium.woff2") format("woff2"),
+//       src: url("#{$font-url}/dana/dana-fanum-medium.woff") format("woff2"),
 //     ),
 //     semiBold: (
 //       font-style: normal,
@@ -31,22 +31,22 @@ $font-faces: (
     regular: (
       font-style: normal,
       font-weight: 400,
-      src: url("#{$font-url}/iransans/woff2/IRANSansWeb(FaNum).woff2") format("woff2"),
+      src: url("#{$font-url}/peyda/woff2/PeydaWeb-Regular.woff") format("woff"),
     ),
     medium: (
       font-style: normal,
       font-weight: 500,
-      src: url("#{$font-url}/iransans/woff2/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"),
+      src: url("#{$font-url}/peyda/woff/PeydaWeb-Medium.woff") format("woff"),
     ),
     semiBold: (
       font-style: normal,
       font-weight: 600,
-      src: url("#{$font-url}/iransans/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+      src: url("#{$font-url}/peyda/woff/PeydaWeb-Bold.woff") format("woff"),
     ),
     bold: (
       font-style: normal,
       font-weight: 700,
-      src: url("#{$font-url}/iransans/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+      src: url("#{$font-url}/peyda/woff/PeydaWeb-ExtraBold.woff") format("woff"),
     ),
   ),
 );
