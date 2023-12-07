@@ -1,6 +1,6 @@
 <template>
   <main id="default-layout">
-    <header>111</header>
+    <the-header />
     <slot />
     <footer>2222</footer>
   </main>

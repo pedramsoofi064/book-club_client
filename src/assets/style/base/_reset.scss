@@ -5,6 +5,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  direction: rtl;
 }
 
 /* Remove default margin */
@@ -42,7 +43,7 @@ body {
   height: 100%;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-size: 10px;
+  // font-size: 10px;
 }
 
 /* A elements that don't have a class get default styles */

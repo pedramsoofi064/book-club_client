@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+@use "../tools" as *;
+
+.container {
+  margin-block: auto;
+  max-width: 1320px;
+  @include mq(x-large) {
+    max-width: 1140px;
+  }
+  @include mq(large) {
+    max-width: 960px;
+  }
+  @include mq(medium) {
+    max-width: 720px;
+  }
+  @include mq(small) {
+    max-width: 540px;
+  }
+  @include mq(x-small) {
+    max-width: 100%;
+  }
+}
