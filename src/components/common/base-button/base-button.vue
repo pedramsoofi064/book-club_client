@@ -114,10 +114,11 @@ export default {
 .button {
   @include flex(row, nowrap, center, center);
   @include typography(label-lg);
-  padding: var(--btn-padding, 14px 24px);
+  padding: 14px 24px;
   border-radius: var(--btn-radius, radius(50));
   height: var(--btn-height, 48px);
-  width: 100%;
+  // width: 100%;
+  
   cursor: pointer;
   transition: $transition-3;
   position: relative;
@@ -192,7 +193,7 @@ export default {
 
   &__text {
     color: inherit;
-    margin: var(--base-btn-label-margin, 0 0.4rem);
+    // margin: var(--base-btn-label-margin, 0 0.4rem);
   }
 }
 
