@@ -13,7 +13,6 @@
 <style lang="scss">
   #default-layout {
     height: 100%;
-    text-align: center;
     background: var(--color-pallette-primary);
   }
 </style>

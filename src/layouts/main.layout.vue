@@ -1,5 +1,5 @@
 <template>
-  <main id="default-layout">
+  <main id="main-layout">
     <the-header />
     <slot />
     <footer>2222</footer>
@@ -8,14 +8,13 @@
 
 <script>
   export default {
-    name: "default-layout",
+    name: "main-layout",
   };
 </script>
 
 <style lang="scss">
-  #default-layout {
+  #main-layout {
     height: 100%;
-    text-align: center;
     background: var(--color-pallette-primary);
   }
 </style>

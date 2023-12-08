@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-    <div class="hero__main container">
+    <div class="hero__main ">
       <div class="hero__content">
         <div class="line"></div>
         <div class="hero__intro">
