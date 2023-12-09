@@ -22,7 +22,7 @@
         <div class="circle"></div>
       </div>
     </div>
-    <div class="hero__statics container">
+    <div class="hero__statics">
       <img class="star2" src="@/assets/images/star2.png" alt="">
       <img class="star3" src="@/assets/images/star3.png" alt="">
       <div

@@ -8,6 +8,7 @@
       </p>
     </div>
     <div class="home-bc__items">
+      <div class="line"></div>
       <div class="home-bc__item item main-item">
         <div class="item__content">
           <div class="item__title">
@@ -58,6 +59,11 @@
       </div>
     </div>
   </div>
+  <div class="home-bc__empty">
+    <div class="container">
+      <img class="star4" src="@/assets/images/star4.png" alt="" />
+    </div>
+  </div>
 </template>
 <script>
 import { ref } from "vue";
@@ -87,11 +93,16 @@ export default {
 
 <style lang="scss" scoped>
 .home-bc {
-  margin-top: 140px;
   margin-right: 15%;
 
+
   &__desc {
-    margin-right: 24px;
+    padding-top: 140px;
+
+    padding-right: 24px;
+    border-bottom: 1px solid var(--color-palette-blush-500);
+    padding-bottom: 20px;
+    border-right: 1px solid var(--color-palette-blush-500);
 
     .desc__title {
       color: var(--color-palette-blush-600);
@@ -106,9 +117,19 @@ export default {
   }
 
   &__items {
-    margin-top: 20px;
-    padding-left: 20%;
-    border-top: 1px solid var(--color-palette-blush-500);
+    margin-left: 20%;
+    border-left: 1px solid var(--color-palette-blush-500);
+    border-right: 1px solid var(--color-palette-blush-500);
+    position: relative;
+
+    .line {
+      position: absolute;
+      width: 1px;
+      background-color:var(--color-palette-blush-500) ;
+      height: 190px;
+      left: -1px;
+      top: 100%;
+    }
   }
 
   &__item {
@@ -118,7 +139,6 @@ export default {
     background-color: var(--color-palette-darkBeige);
   }
 
-  border-right: 1px solid var(--color-palette-blush-500);
 
   // .left-item {
   //   border-radius: 1000px 0 0 1000px;
@@ -134,16 +154,16 @@ export default {
   }
 
   .item {
-    &.main-item {
-      background-color: var(--color-palette-linenMist);
-      margin-bottom: 32px;
-    }
-
     &:nth-child(2n) {
       border-radius: 1000px 0 0 1000px;
     }
     &:nth-child(2n + 1) {
       border-radius: 0 1000px 1000px 0;
+    }
+    &.main-item {
+      background-color: var(--color-palette-linenMist);
+      margin-bottom: 32px;
+      border-radius: 1000px;
     }
     &__title {
       @include flex($align: center);
@@ -168,6 +188,18 @@ export default {
         @include typography(titre-lg);
         color: var(--color-text-dark2);
       }
+    }
+  }
+
+  &__empty {
+    height: 190px;
+    border-bottom: 1px solid var(--color-palette-blush-500);
+    border-top: 1px solid var(--color-palette-blush-500);
+    position: relative;
+    .star4 {
+      position: absolute;
+      left: 30%;
+      top: 30%;
     }
   }
 }
