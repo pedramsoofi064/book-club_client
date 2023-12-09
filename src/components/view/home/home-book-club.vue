@@ -50,7 +50,7 @@
                 class="group-item"
               >
                 {{ group }}
-                <span v-if="index !== items[0].groups.length - 1">,</span>
+                <span v-if="index !== item.groups.length - 1">,</span>
               </div>
             </div>
           </div>
@@ -133,10 +133,12 @@ export default {
   }
 
   &__item {
-    border-radius: 1000px;
+    
     height: 390px;
     flex: 1;
     background-color: var(--color-palette-darkBeige);
+    @include flex($align:center);
+    padding: 10%
   }
 
 
@@ -179,14 +181,21 @@ export default {
       background-color: var(--color-background-light);
       @include flex($align: center, $justify: center);
       margin-right: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        transform: rotate(-50deg)
+      }
     }
 
     &__groups {
       @include flex();
-
+      margin-top: 10px;
       .group-item {
         @include typography(titre-lg);
         color: var(--color-text-dark2);
+
       }
     }
   }
