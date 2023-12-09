@@ -205,6 +205,7 @@ export default {
     border-bottom: 1px solid var(--color-palette-blush-500);
     border-top: 1px solid var(--color-palette-blush-500);
     position: relative;
+    z-index: 1;
     .star4 {
       position: absolute;
       left: 30%;
