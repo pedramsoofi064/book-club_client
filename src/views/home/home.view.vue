@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- <home-hero /> -->
-    <home-book-club />
+    <!-- <home-book-club /> -->
     <!-- <current-plan /> -->
     <!-- <future-plan /> -->
     <FAQ />

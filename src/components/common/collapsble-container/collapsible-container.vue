@@ -34,11 +34,11 @@
   .collapsible {
     overflow: hidden;
     &-enter-active {
-      animation: collapse 0.15s forwards reverse;
+      animation: collapse 0.3s forwards reverse;
     }
 
     &-leave-active {
-      animation: collapse 0.15s forwards;
+      animation: collapse 0.3s forwards;
     }
   }
   @keyframes collapse {

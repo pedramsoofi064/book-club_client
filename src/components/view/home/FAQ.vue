@@ -2,7 +2,11 @@
   <div class="faq">
     <div class="questions">
       <div class="question" v-for="i in 5" :key="i">
-        <div class="question__main" @click="collapsedIndex = i">
+        <div
+          class="question__main"
+          :class="{ collapsed: collapsedIndex == i }"
+          @click="collapsedIndex = i"
+        >
           <span class="question__circle"></span>
           <div class="question__main-text">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
@@ -78,10 +82,16 @@ export default {
       height: 96px;
       // border-radius: 1000px;
       // border: 2px solid transparent;
-      border-bottom: 1px solid var(--color-palette-blush-500);
+      border-bottom: 2px solid var(--color-palette-blush-500);
       @include flex($align: center);
       padding-inline: 32px;
       cursor: pointer;
+      
+
+      &.collapsed {
+        border: 2px solid var(--color-palette-green-500);
+        border-radius: 100px;
+      }
     }
 
     &__circle {
@@ -95,6 +105,7 @@ export default {
       @include typography(titre-lg);
 
       margin-right: 16px;
+      margin-left: 25px;
     }
 
     &__answer {
