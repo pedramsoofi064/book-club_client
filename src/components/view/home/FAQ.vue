@@ -1,39 +1,42 @@
 <template>
   <div class="faq">
-    <div class="questions">
-      <div class="question" v-for="i in 5" :key="i">
-        <div
-          class="question__main"
-          :class="{ collapsed: collapsedIndex == i }"
-          @click="collapsedIndex = i"
-        >
-          <span class="question__circle"></span>
-          <div class="question__main-text">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-            استفاده از طراحان گرافیک است؟
+    <div class="faq__main container">
+      <div class="questions">
+        <div class="question" v-for="i in 5" :key="i">
+          <div
+            class="question__main"
+            :class="{ collapsed: collapsedIndex == i }"
+            @click="collapsedIndex = i"
+          >
+            <span class="question__circle"></span>
+            <div class="question__main-text">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است؟
+            </div>
+            <icon-loader name="arrow-down" />
           </div>
-          <icon-loader name="arrow-down" />
+          <collapsible-container
+            class="question__answer"
+            :collapsed="i == collapsedIndex"
+          >
+            <div class="answer__text">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
+              ستون و سطرآنچنان که لازم است. لورم ایپسوم متن ساختگی با تولید
+              سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+              چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+              است.
+            </div>
+          </collapsible-container>
         </div>
-        <collapsible-container
-          class="question__answer"
-          :collapsed="i == collapsedIndex"
-        >
-          <div class="answer__text">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-            استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
-            ستون و سطرآنچنان که لازم است. لورم ایپسوم متن ساختگی با تولید سادگی
-            نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون
-            بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-          </div>
-        </collapsible-container>
       </div>
-    </div>
-    <div class="faq__content">
-      <h1 class="faq__title">سوالات رایج</h1>
-      <h1 class="faq__desc">
-        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-        از طراحان گرافیک است
-      </h1>
+      <div class="faq__content">
+        <h1 class="faq__title">سوالات رایج</h1>
+        <h1 class="faq__desc">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است
+        </h1>
+      </div>
     </div>
   </div>
 </template>
@@ -51,12 +54,14 @@ export default {
 
 <style lang="scss" scoped>
 .faq {
-  padding-block: 140px;
-  margin-right: 15%;
-  margin-left: 15%;
-  border-left: 1px solid var(--color-palette-blush-500);
-  @include flex($justify: space-between);
-  gap: 30px;
+  &__main {
+    padding-block: 140px;
+    // margin-right: 15%;
+    // margin-left: 15%;
+    border-left: 1px solid var(--color-palette-blush-500);
+    @include flex($justify: space-between);
+    gap: 30px;
+  }
 
   &__content {
     margin-left: 16px;
@@ -86,7 +91,6 @@ export default {
       @include flex($align: center);
       padding-inline: 32px;
       cursor: pointer;
-      
 
       &.collapsed {
         border: 2px solid var(--color-palette-green-500);

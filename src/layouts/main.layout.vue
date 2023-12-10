@@ -2,7 +2,7 @@
   <main id="main-layout">
     <!-- <the-header /> -->
     <slot />
-    <footer>2222</footer>
+    <the-footer />
   </main>
 </template>
 
