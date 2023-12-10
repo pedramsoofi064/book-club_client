@@ -1,9 +1,9 @@
 <template>
   <div class="home">
-    <!-- <home-hero /> -->
-    <!-- <home-book-club /> -->
-    <!-- <current-plan /> -->
-    <!-- <future-plan /> -->
+    <home-hero />
+    <home-book-club />
+    <current-plan />
+    <future-plan />
     <FAQ />
     <memorial-wall />
   </div>

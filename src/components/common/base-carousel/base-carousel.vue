@@ -99,7 +99,7 @@ export default {
   }
 
   &__slide {
-    padding: space(2) 0 space(8) space(16);
+    padding: 0  0 0 space(16);
   }
 }
 
