@@ -78,6 +78,8 @@ export default {
 
 <style lang="scss" scoped>
 .groups {
+  margin-bottom: 60px;
+
   &__list-container {
     border-bottom: 1px solid var(--color-palette-blush-500);
   }
