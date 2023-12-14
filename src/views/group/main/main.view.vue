@@ -1,6 +1,8 @@
 <template>
   <div class="book-club">
     <main-hero />
+    <how-started />
+    <main-groups />
   </div>
 </template>
 
