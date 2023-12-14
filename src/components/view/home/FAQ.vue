@@ -106,7 +106,7 @@ export default {
     }
     &__main-text {
       color: var(--color-text-dark1);
-      @include typography(titre-lg);
+      @include typography(title-lg);
 
       margin-right: 16px;
       margin-left: 25px;

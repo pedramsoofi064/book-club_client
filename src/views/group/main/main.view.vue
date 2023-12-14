@@ -1,5 +1,7 @@
 <template>
-  <div class="book-club"></div>
+  <div class="book-club">
+    <main-hero />
+  </div>
 </template>
 
 <script>

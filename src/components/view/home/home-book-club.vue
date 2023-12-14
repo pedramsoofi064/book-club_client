@@ -1,13 +1,15 @@
 <template>
   <div class="home-bc">
     <div class="home-bc__desc">
-      <h1 class="desc__title">بوک کلاب‌های ما را بشناسید</h1>
-      <p class="desc__text">
-        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-        از طراحان گرافیک است
-      </p>
+      <div class="container desc-main">
+        <h1 class="desc__title">بوک کلاب‌های ما را بشناسید</h1>
+        <p class="desc__text">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است
+        </p>
+      </div>
     </div>
-    <div class="home-bc__items">
+    <div class="home-bc__items container">
       <div class="line"></div>
       <div class="home-bc__item item main-item">
         <div class="item__content">
@@ -93,17 +95,15 @@ export default {
 
 <style lang="scss" scoped>
 .home-bc {
-  margin-right: 15%;
-
-
   &__desc {
-    padding-top: 140px;
-
-    padding-right: 24px;
+    
     border-bottom: 1px solid var(--color-palette-blush-500);
-    padding-bottom: 20px;
-    border-right: 1px solid var(--color-palette-blush-500);
-
+    .desc-main {
+      padding-top: 140px;
+      padding-right: 24px;
+      padding-bottom: 20px;
+      border-right: 1px solid var(--color-palette-blush-500);
+    }
     .desc__title {
       color: var(--color-palette-blush-600);
       @include typography(headline-lg);
@@ -117,7 +117,6 @@ export default {
   }
 
   &__items {
-    margin-left: 20%;
     border-left: 1px solid var(--color-palette-blush-500);
     border-right: 1px solid var(--color-palette-blush-500);
     position: relative;
@@ -125,7 +124,7 @@ export default {
     .line {
       position: absolute;
       width: 1px;
-      background-color:var(--color-palette-blush-500) ;
+      background-color: var(--color-palette-blush-500);
       height: 190px;
       left: -1px;
       top: 100%;
@@ -133,14 +132,12 @@ export default {
   }
 
   &__item {
-    
     height: 390px;
     flex: 1;
     background-color: var(--color-palette-darkBeige);
-    @include flex($align:center);
-    padding: 10%
+    @include flex($align: center);
+    padding: 10%;
   }
-
 
   // .left-item {
   //   border-radius: 1000px 0 0 1000px;
@@ -185,7 +182,7 @@ export default {
       cursor: pointer;
       transition: all 0.3s;
       &:hover {
-        transform: rotate(-50deg)
+        transform: rotate(-50deg);
       }
     }
 
@@ -193,9 +190,8 @@ export default {
       @include flex();
       margin-top: 10px;
       .group-item {
-        @include typography(titre-lg);
+        @include typography(title-lg);
         color: var(--color-text-dark2);
-
       }
     }
   }

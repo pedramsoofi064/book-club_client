@@ -1,24 +1,26 @@
 <template>
   <div class="current-plan">
-    <div class="current-plan__slider">
-      <base-carousel
-        class="current-plan__carousel"
-        :items-to-show="itemsToShow"
-        :items="courses"
-      >
-        <template #item="{ item }">
-          <div class="slide-item">
-            {{ item.id }}
-          </div>
-        </template>
-      </base-carousel>
-    </div>
-    <div class="current-plan__content">
-      <h1 class="current-plan__title">این ماه با هم چی می‌خونیم؟</h1>
-      <h1 class="current-plan__desc">
-        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-        از طراحان گرافیک است
-      </h1>
+    <div class="current-plan__main container">
+      <div class="current-plan__slider">
+        <base-carousel
+          class="current-plan__carousel"
+          :items-to-show="itemsToShow"
+          :items="courses"
+        >
+          <template #item="{ item }">
+            <div class="slide-item">
+              {{ item.id }}
+            </div>
+          </template>
+        </base-carousel>
+      </div>
+      <div class="current-plan__content">
+        <h1 class="current-plan__title">این ماه با هم چی می‌خونیم؟</h1>
+        <h1 class="current-plan__desc">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است
+        </h1>
+      </div>
     </div>
   </div>
 </template>
@@ -80,10 +82,12 @@ export default {
 .current-plan {
   padding-bottom: 140px;
   border-bottom: 1px solid var(--color-palette-blush-500);
-  padding-inline: 15%;
-  @include flex($align: center);
-  z-index: 5;
-  gap: 60px ;
+
+  &__main {
+    @include flex($align: center);
+    z-index: 5;
+    gap: 60px;
+  }
 
   &__content {
     margin-bottom: 30px;

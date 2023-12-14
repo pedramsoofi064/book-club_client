@@ -155,7 +155,7 @@ export default {
     text-align: right;
   }
   &__desc {
-    @include typography(titre-lg);
+    @include typography(title-lg);
     text-align: right;
   }
 

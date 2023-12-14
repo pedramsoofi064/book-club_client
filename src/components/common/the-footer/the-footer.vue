@@ -86,7 +86,7 @@ export default {
   }
 
   &__title {
-    @include typography(titre-md);
+    @include typography(title-md);
   }
 
   &__social-items {

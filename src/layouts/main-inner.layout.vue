@@ -1,21 +1,21 @@
 <template>
-  <main id="default-layout">
-    <h1>3333</h1>
+  <main id="main-layout">
+    <the-header />
     <slot />
-    <footer>www</footer>
+    <the-footer />
   </main>
 </template>
 
 <script>
   export default {
-    name: "default-layout",
+    name: "main-layout",
   };
 </script>
 
 <style lang="scss">
-  #default-layout {
+  #main-layout {
     height: 100%;
-    text-align: center;
     background: var(--color-pallette-primary);
+    position: relative;
   }
 </style>
