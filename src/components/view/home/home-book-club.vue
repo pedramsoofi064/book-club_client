@@ -1,3 +1,4 @@
+
 <template>
   <div class="home-bc">
     <div class="home-bc__desc">
