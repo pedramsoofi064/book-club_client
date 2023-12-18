@@ -20,9 +20,7 @@ export default {};
 
 <style lang="scss" scoped>
 .gallery {
-  margin-top: 80px;
   position: relative;
-  margin-bottom: 140px;
   &__title {
     text-align: center;
     margin-bottom: 32px;

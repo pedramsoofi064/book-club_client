@@ -3,15 +3,27 @@
     <single-hero />
     <next-course />
     <read-books />
-    <gallery-section />
+    <div class="gallery-section">
+      <div class="container">
+        <gallery-section />
+      </div>
+    </div>
     <user-comments />
     <sign-uo-section />
   </div>
 </template>
 
 <script>
-export default {
-}
+export default {};
 </script>
 
-<style></style>
+<style lang="scss" scope>
+.gallery-section {
+  border-bottom: 1px solid var(--color-palette-blush-500);
+  margin-bottom: 40px;
+  .container {
+    padding-top: 80px;
+    border-left: 1px solid var(--color-palette-blush-500);
+  }
+}
+</style>

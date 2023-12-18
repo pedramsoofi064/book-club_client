@@ -12,7 +12,7 @@
         </div>
       </Slide>
     </Carousel>
-    <div class="carousel__actions">
+    <div v-if="!hideButton" class="carousel__actions">
       <div class="custom-carousel__btn icon-right">
         <icon-loader @click="prevClicked" name="arrow-right"></icon-loader>
       </div>
@@ -45,6 +45,11 @@ export default {
     items: {
       type: Array,
       required: true,
+    },
+    hideButton: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
   },
   components: {
@@ -99,7 +104,7 @@ export default {
   }
 
   &__slide {
-    padding: 0  0 0 space(16);
+    padding: 0 0 0 space(16);
   }
 }
 
