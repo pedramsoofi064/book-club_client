@@ -9,7 +9,7 @@
       </div>
     </div>
     <user-comments />
-    <sign-uo-section />
+    <sign-up-section />
   </div>
 </template>
 
