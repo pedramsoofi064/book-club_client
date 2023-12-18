@@ -72,7 +72,7 @@ export default {};
     position: absolute;
     left: 0;
     right: 10%;
-    bottom: 0;
+    bottom: -1px;
   }
   // border-bottom: 1px s olid var(--color-palette-blush-500);
   &__main {
